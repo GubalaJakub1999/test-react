@@ -1,15 +1,16 @@
 /* eslint-disable jsx-a11y/anchor-has-content */
 import styles from './NavBar.module.scss';
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <div>
       <nav className={styles.navi}>
-      <a className={styles.icon +' fa fa-tasks'} href='/'></a>
+      <Link className={styles.icon +' fa fa-tasks'} to='/'></Link>
       <div className={styles.links}>
-        <a className={styles.link} href='/'> Home</a>
-        <a className={styles.link} href='favorite'> Favorite</a>
-        <a className={styles.link} href='about'> About</a>
+        <Link className={styles.link} to='/'> Home</Link>
+        <Link className={styles.link} to='favorite'> Favorite</Link>
+        <Link className={styles.link} to='about'> About</Link>
       </div>
       </nav>
     </div>
