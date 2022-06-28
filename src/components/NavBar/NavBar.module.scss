@@ -1,18 +1,8 @@
 @import '../../styles/settings.scss';
 
-.link {
-  position: relative;
-  text-decoration: none;
-  color: white;
-  font-weight: bolder;
-  :visited {
-    color: white;
-    text-decoration: none;
-  }
-}
-
 .links {
   margin: 20px 60px;
+  color: white;
 }
 
 .navi {
@@ -26,4 +16,17 @@
   font-size: 24px;
   margin: 15px 15px 15px 40px;
   color: white;
+}
+
+.linkActive {
+  color: $color-warning;
+  position: relative;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-right: 10px;
 }
