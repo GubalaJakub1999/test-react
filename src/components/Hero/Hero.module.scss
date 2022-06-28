@@ -22,3 +22,15 @@
 .title + .subtitle {
   margin-top: (- $base-size * 3);
 }
+
+.link {
+  text-decoration: none;
+  color: white;
+  :visited {
+    color: white;
+  }
+}
+
+.text {
+  text-align: right;
+}

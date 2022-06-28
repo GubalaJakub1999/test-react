@@ -1,0 +1,29 @@
+@import '../../styles/settings.scss';
+
+.link {
+  position: relative;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  :visited {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.links {
+  margin: 20px 60px;
+}
+
+.navi {
+  background-color: darken($color-dark, 3%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon::before {
+  position: absolute;
+  font-size: 24px;
+  margin: 15px 15px 15px 40px;
+  color: white;
+}
