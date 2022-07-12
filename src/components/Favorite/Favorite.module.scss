@@ -1,0 +1,37 @@
+@use "sass:math";
+@import '../../styles/settings.scss';
+
+.title {
+  text-align: center;
+  font-size: ($base-size * 1.5);
+  margin: 0 0 ($base-size * 1.5) 0;
+}
+
+.cards {
+  padding: math.div($base-size, 2) 0;
+  color: $color-dark;
+  box-shadow: 0 math.div($base-size, 4) 0 rgba(0,0,0,0.3);
+  border-radius: $radius;
+  padding: ($base-size * 1.5);
+  margin: 0 $base-size $base-size 0;
+  background: $color-light;
+  width: calc(33% - 12px);
+  flex-shrink: 0;
+
+  float: none;
+}
+
+@media (max-width: 767px) {
+  .column {
+    width: 100%;
+    margin: 0 0 $base-size 0;
+  }
+}
+
+.divcards {
+  display:flex;
+  height:100%;
+  width:100%;
+  justify-content:center;
+  align-items:center;
+}
